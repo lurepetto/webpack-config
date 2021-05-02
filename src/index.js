@@ -1,8 +1,8 @@
 // Importamos los estilos CSS
-import './styles.css';
+import "./styles.css";
 // Importamos las clases a utilizar
-import { Todo, TodoList } from './classes';
-import { crearTodoHtml } from './js/componentes';
+import { Todo, TodoList } from "./classes";
+import { crearTodoHtml } from "./js/componentes";
 
 export const todoList = new TodoList();
 
@@ -10,10 +10,7 @@ export const todoList = new TodoList();
 todoList.todos.forEach(crearTodoHtml);
 // todoList.todos.forEach( todo => crearTodoHtml( todo ) );
 
-
 // Reconstruccion de instancias de Todos (Al pasar un objeto x el stringify no se almacenan los metodos)
-const newTodo = new Todo('aprender javascript');
+const newTodo = new Todo("aprender javascript");
 
-console.log( 'todos', todoList.todos );
-
-
+console.log("todos", todoList.todos);
